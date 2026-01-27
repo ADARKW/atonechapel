@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atone Bible School | Raising Kingdom Leaders</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f9;
+      color: #1e293b;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(rgba(10,31,58,.85), rgba(10,31,58,.95)),
+                  url('banner.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 150px 20px 110px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
+      color: #e8c97f;
+      margin-bottom: 14px;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      max-width: 760px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    /* Navigation */
+    nav {
+      background: #0a1f3a;
+      padding: 16px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #e8c97f;
+    }
+
+    /* Main */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 90px 20px;
+    }
+
+    section {
+      margin-bottom: 100px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0a1f3a;
+    }
+
+    .divider {
+      width: 90px;
+      height: 4px;
+      background: #c9a23f;
+      margin: 0 auto 50px;
+      border-radius: 2px;
+    }
+
+    /* Intro */
+    .intro {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.15rem;
+      color: #475569;
+      line-height: 1.8;
+    }
+
+    /* Pillars */
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      margin-top: 60px;
+    }
+
+    .pillar {
+      background: #fff;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .pillar h3 {
+      color: #0a1f3a;
+      font-size: 1.4rem;
+      margin-bottom: 14px;
+    }
+
+    .pillar p {
+      color: #475569;
+      font-size: 1.05rem;
+    }
+
+    /* Curriculum */
+    .curriculum {
+      background: linear-gradient(
+        180deg,
+        rgba(10,31,58,.95),
+        rgba(10,31,58,.88)
+      );
+      padding: 100px 30px;
+      border-radius: 20px;
+      color: #e5e7eb;
+    }
+
+    .curriculum h2 {
+      color: #e8c97f;
+    }
+
+    .curriculum ul {
+      max-width: 800px;
+      margin: 0 auto;
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+
+    .curriculum li {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+
+    /* Call to Action */
+    .cta {
+      text-align: center;
+      background: #0a1f3a;
+      color: #fff;
+      padding: 100px 20px;
+      border-radius: 20px;
+    }
+
+    .cta h2 {
+      color: #e8c97f;
+      margin-bottom: 24px;
+    }
+
+    .cta p {
+      max-width: 720px;
+      margin: 0 auto 40px;
+      font-size: 1.15rem;
+      color: #cbd5e1;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #c9a23f;
+      color: #0a1f3a;
+      padding: 16px 48px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.15rem;
+      box-shadow: 0 12px 30px rgba(201,162,63,.4);
+      transition: all .3s ease;
+    }
+
+    .cta a:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 40px rgba(201,162,63,.55);
+    }
+
+    footer {
+      background: #0a0f1a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 60px 20px;
+      margin-top: 120px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+
+      h2 {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.jpg" alt="Atone Chapel Logo" style="width:90px;margin-bottom:20px;">
+  <h1>Atone Bible School</h1>
+  <p>
+    A prophetic training ground for raising leaders of excellence,
+    power, healing, and evangelistic impact.
+  </p>
+</header>
+
+<nav>
+   </div>
+</section>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="nav-links" id="navLinks">
+    <a href="#">Home</a>
+    <a href="live.html">Live</a>
+    <a href="bibleschool.html">Bible School</a>
+    <a href="about.html">About</a>
+    <a href="give.html">Give</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- INTRO -->
+  <section>
+    <h2>Our Mandate</h2>
+    <div class="divider"></div>
+    <p class="intro">
+      Atone Bible School exists to equip believers with sound doctrine,
+      spiritual authority, and practical ministry skills.
+      We are committed to raising kingdom leaders who walk in holiness,
+      demonstrate power, minister healing, and advance the gospel with excellence.
+    </p>
+  </section>
+
+  <!-- PILLARS -->
+  <section>
+    <h2>Core Pillars</h2>
+    <div class="divider"></div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <h3>Excellence in Leadership</h3>
+        <p>
+          Developing disciplined, accountable, and Spirit-led leaders
+          who represent Christ with integrity and excellence.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <h3>Power & Spiritual Authority</h3>
+        <p>
+          Training believers to walk in dominion, prayer mastery,
+          prophetic accuracy, and spiritual warfare.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <h3>Healing & Deliverance</h3>
+        <p>
+          Imparting biblical understanding and practical activation
+          of divine healing, deliverance, and restoration.
+        </p>
+      </div>
+
+      <div class="pillar">
+        <h3>Evangelism & Missions</h3>
+        <p>
+          Equipping students to preach the gospel boldly,
+          win souls, disciple nations, and impact communities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section class="curriculum">
+    <h2>Training Curriculum</h2>
+    <div class="divider"></div>
+
+    <ul>
+      <li>Foundations of Christian Doctrine & Sound Theology</li>
+      <li>Prayer, Intercession & Spiritual Warfare</li>
+      <li>Prophetic Ministry & Hearing the Voice of God</li>
+      <li>Healing, Deliverance & Power Ministry</li>
+      <li>Leadership, Character & Ministry Ethics</li>
+      <li>Evangelism, Missions & Church Planting</li>
+      <li>Practical Ministry Activation & Mentorship</li>
+    </ul>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Enroll & Be Equipped</h2>
+    <p>
+      If you sense a call into leadership, ministry, evangelism,
+      or deeper spiritual authority, Atone Bible School is a place
+      where your calling will be sharpened and released.
+    </p>
+    <a href="https://wa.me/233244491177">Apply via WhatsApp</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Atone Chapel. All Rights Reserved.</p>
+  <p>Raising leaders of power, excellence, and kingdom impact.</p>
+</footer>
+
+</body>
+</html>
