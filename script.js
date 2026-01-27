@@ -22,9 +22,13 @@ const whatsappAlert = document.getElementById("whatsappAlert");
    ========================= */
 if (isLive) {
   offlineMessage.style.display = "none";
-  liveContainer.style.display = "block";
-  liveStatus.innerHTML = "🔴 <span class='live-badge'>LIVE NOW</span> — Join Prophet Joseph Adarkwah";
-  whatsappAlert.style.display = "inline-block";
+liveContainer.style.display = "block";
+
+liveStatus.innerHTML =
+  "<span class='live-dot'>🔴</span> <span class='live-badge'>LIVE NOW</span> — <span class='live-name'>Join Prophet Joseph Adarkwah</span>";
+
+whatsappAlert.style.display = "inline-block";
+
 } else {
   liveContainer.style.display = "none";
   offlineMessage.style.display = "block";
@@ -61,4 +65,5 @@ updateCountdown();
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("show");
 }
+
 
